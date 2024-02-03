@@ -5,6 +5,6 @@ import {Home} from './pages'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Home />
+    <Home lastName={"nomezin"} age={28}/>
   </React.StrictMode>,
 )

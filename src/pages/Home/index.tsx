@@ -1,20 +1,29 @@
-import { useState } from "react"
+import type { HomeProps } from "./types";
+import { useHome } from "./hooks/UseHome";
+import { Button } from "./components";
 
+function Home({ lastName, age }: HomeProps) {
+  const { name, handleName, email, handleInput } =
+    useHome();
 
-
-function Home() { 
-    const [name,setName] = useState<String>("")
-    function handleName() { 
-        setName("tu tu ruuuu")
-    }
-
-    return ( 
-        <div>
-        <h1>YURASTICO</h1>
-        <span>{name}</span>
-        <button type="button" onClick={handleName}>Click me!</button>
-        </div>
-    )
+  return (
+    <div>
+      <h1>FIAP</h1>
+      <span>
+        {name} {lastName}{" "}
+        {age && `e a idade é ${age}`}
+      </span>
+      <p />
+      <input
+        value={email}
+        onChange={handleInput}
+        type="email"
+        name="email"
+        id="email"
+      />
+      <Button onClick={handleName} />
+    </div>
+  );
 }
 
-export { Home }
+export { Home };
