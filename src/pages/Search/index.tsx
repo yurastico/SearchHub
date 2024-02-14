@@ -9,18 +9,18 @@ function Search() {
   return (
     <Container>
       <SearchArea>
-        <h1>FIAP</h1>
-        <h2>Educação que transforma</h2>
+        <h1>SearchHub</h1>
+        <h2>Search for users on Github</h2>
         <input
           value={username}
           onChange={handleInput}
           type="text"
           name="username"
           id="username"
-          placeholder="Digite o nome do usuário"
+          placeholder="Type github username"
         />
         <Button
-          text="Buscar"
+          text="Search"
           onClick={throwUser}
         />
       </SearchArea>

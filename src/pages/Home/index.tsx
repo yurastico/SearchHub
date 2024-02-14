@@ -7,10 +7,10 @@ function Home() {
 
   return (
     <Container>
-      <h1>FIAP</h1>
-      <h2>Educação que transforma</h2>
+      <h1>SearchHub</h1>
+      <h2>Search for users in github</h2>
       <Button
-        text="Buscar usuário do Github"
+        text="Search for users in github<"
         onClick={handleGoToSearch}
       />
     </Container>

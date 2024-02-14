@@ -10,9 +10,11 @@ export const Container = styled.div`
   max-width: 480px;
   margin: 10px auto;
   gap: 10px;
+  color: var(--white);
 
   h1 {
     font-size: 3rem;
+    
   }
 
   h2 {

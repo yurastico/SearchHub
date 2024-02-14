@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --white: #FFFFFF;
     --black: #000000;
-    --background: #e91c5d;
+    --background: #0A0233;
   }
 `
 
