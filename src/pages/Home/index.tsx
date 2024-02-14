@@ -1,4 +1,4 @@
-import { useHome } from "./hooks/useHome";
+import { useHome } from "./hooks/UseHome";
 import { Button } from "../../components";
 import { Container } from "./styles";
 
